@@ -890,6 +890,7 @@ div.desc {
     letter-spacing: 3px;
     color: #EBEEEE;
     margin-bottom: 6px;
+    position: center;
 }
 
 #contact h1 span {
@@ -911,6 +912,7 @@ div.desc {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: #EBEEEE;
     margin-bottom: 6px;
+    position: center;
 }
 
 #contact p.lead {
