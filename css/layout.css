@@ -240,8 +240,7 @@ html,body{
   }
   body{ 
     background: #04d7f3 url(../images/portfolio/modals/aboutback.jpg) no-repeat bottom center;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;  
+     
   }
   
   .skills-circle-wrap{ 
