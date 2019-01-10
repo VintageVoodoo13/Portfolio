@@ -63,7 +63,7 @@ header .banner {
     margin: 0 auto;
     width: 85%;
     padding-bottom: 70px;
-    s text-align: center;
+     text-align: center;
 }
 
 header .banner-text {
@@ -75,7 +75,8 @@ header .banner-text h1 {
     color: rgb(253, 249, 252);
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
+    z-index: 20;
 }
 
 header .banner-text h3 {
@@ -83,7 +84,8 @@ header .banner-text h3 {
     color: rgb(246, 249, 250);
     margin: 0 auto;
     width: 70%;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+    z-index: 40;
 }
 
 header .banner-text h3 span,
