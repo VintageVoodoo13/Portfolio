@@ -467,7 +467,9 @@ html,body{
 }
 
 #resume h1 {
-    font: 18px/24px
+    font: 18px/24px;
+    text-align: center;
+    
     
 }
 
