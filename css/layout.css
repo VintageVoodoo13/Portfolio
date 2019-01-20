@@ -449,9 +449,10 @@ html,body{
 /* ------------------------------------------------------------------ */
 
 #resume {
-    background: #fff;
-    padding-top: 90px;
-    padding-bottom: 72px;
+    background: #00CCCC;
+    margin-top:100px;
+    padding-bottom: 950px;
+    margin-bottom: 200px;
     overflow: hidden;
 }
 
@@ -466,8 +467,8 @@ html,body{
 }
 
 #resume h1 {
-    font: 18px/24px text-transform: uppercase;
-    letter-spacing: 1px;
+    font: 18px/24px
+    
 }
 
 #resume h1 span {
@@ -478,38 +479,134 @@ html,body{
     font: 25px/30px
 }
 
-#resume .header-col {
-    padding-top: 9px;
+
+
+
+
+#resume .cards * {
+  width: 225%;
+
+  
+}
+#resume .cards__axis {
+	position: relative;
+}
+#resume .cards__axis:before {
+	content: "";
+	display: block;
+	
+  
+}
+#resume .cards__front,
+#resume .cards__back {
+	position: absolute;
+
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+#resume .cards__front {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+  
+	-webkit-transform: perspective(1000px) rotateX(40deg) rotateY(0deg);
+	-moz-transform: perspective(1000px) rotateX(40deg) rotateY(0deg);
+	-ms-transform: perspective(1000px) rotateX(40deg) rotateY(0deg);
+	-o-transform: perspective(1000px) rotateX(40deg) rotateY(0deg);
+	transform: perspective(1000px) rotateX(40deg) rotateY(0deg);
+}
+#resume .cards__axis:hover .cards__front {
+	-webkit-transform: perspective(1000px) rotateX(0deg) rotateY(-180deg);
+	-moz-transform: perspective(1000px) rotateX(0deg) rotateY(-180deg);
+	-ms-transform: perspective(1000px) rotateX(0deg) rotateY(-180deg);
+  -o-transform: perspective(1000px) rotateX(0deg) rotateY(-180deg);
+	transform: perspective(1000px) rotateX(0deg) rotateY(-180deg);
+}
+#resume .cards__back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+  
+	-webkit-transform: perspective(1000px) rotateY(180deg);
+	-moz-transform: perspective(1000px) rotateY(180deg);
+	-ms-transform: perspective(1000px) rotateY(180deg);
+	-o-transform: perspective(1000px) rotateY(180deg);
+	transform: perspective(1000px) rotateY(180deg);
+}
+#resume .cards__axis:hover .cards__back {
+	-webkit-transform: perspective(1000px) rotateY(0);
+	-moz-transform: perspective(1000px) rotateY(0);
+	-ms-transform: perspective(1000px) rotateY(0);
+	-o-transform: perspective(1000px) rotateY(0);
+	transform: perspective(1000px) rotateY(0);
 }
 
-#resume .main-col {
-    padding-right: 10%;
+/* CUSTOM STYLES FOR THIS UNORDERED LIST */
+#resume .cards {
+  width: 120%;
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
+  
+  
 }
 
-.education,
-.work {
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
+#resume .cards:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#resume .cards__axis {
+
+  margin-left: 2.5%;
+	width: 20%;
+}
+#resume .cards__axis img {
+  border: 15px solid #fff;
+  border-bottom-width: 45px;
+  box-shadow: 5px 5px 25px #000;
 }
 
-#resume .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
-    margin-bottom: 18px;
-    margin-top: 9px;
+/* CONTENT STYLES */
+#resume .cards__description--front {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  text-align: center;
 }
-
-#resume .info span {
-    margin-right: 5px;
-    margin-left: 5px;
+#resume .cards__description--front {
+  font-size: 1.5em;
 }
-
-#resume .date {
-    font: 15px/24px 'opensans-regular', sans-serif;
-    margin-top: 6px;
+#resume .cards__description--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  
 }
-
+#resume .cards__description--back p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -1em;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Impact', sans-serif;
+  color: #880000;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
 
 /* ------------------------------------------------------------------ */
 

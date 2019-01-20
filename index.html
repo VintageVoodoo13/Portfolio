@@ -160,146 +160,42 @@
    ================================================== -->
     <section id="resume">
 
-        <!-- Education
-      ----------------------------------------------- -->
-        <div class="row education">
+ 
 
-            <div class="three columns header-col">
-                <h1><span>Education</span></h1>
-            </div>
-
-            <div class="nine columns main-col">
-
-                <div class="row item">
-
-                    <div class="twelve columns">
-
-                        <h3>University of Kansas</h3>
-                        <p class="info">KU<span>&bull;</span>Full Stack Development <span>&bull;</span> <em class="date">January 2018</em></p>
-
-                        <p>
-                            I am just finished KU's Fullstack Development program last year. I am becomming proficient in front end and back end programming. This program teaches the latest in web development technologies and ecosystems.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- item end -->
-
-                <div class="row item">
-
-                    <div class="twelve columns">
-
-                        <h3>CMSU</h3>
-                        <p class="info">CMSU<span>&bull;</span>Commercial Photography<span>&bull;</span> <em class="date">January 2005</em></p>
-
-                        <p>
-                            This program taught the knowledge of effectively communicating the ideas of clients. I learned to apply my creative ability, communication skills, business-saviness, ability to use equiptment and various photography software.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- item end -->
-
-                <div class="row item">
-
-                    <div class="twelve columns">
-
-                        <h3>Kansas City Metropolitan Community College</h3>
-                        <p class="info">Kansas City Metropolitan Community College<span>&bull;</span>Arts and Humanities<span>&bull;</span> <em class="date">January 2003</em></p>
-
-                        <p>
-                            Studied advanced photography and scultpure. Advanced explorations and study in sculpture, three-dimensional media and imagery and conceptual based art. Explored sculpture, advanced three-dimensional design, mixed media, installation art, site specificity,
-                            performance art, and public art.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- item end -->
-
-            </div>
-            <!-- main-col end -->
-
-        </div>
-        <!-- End Education -->
-
-
-        <!-- Work
-      ----------------------------------------------- -->
-        <div class="row work">
-
-            <div class="three columns header-col">
-                <h1><span>Work</span></h1>
-            </div>
-
-            <div class="nine columns main-col">
-
-                <div class="row item">
-
-                    <div class="twelve columns">
-
-                        <h3>The Eddies Custom APV Club </h3>
-                        <p class="info">The Eddies Custom APV Club<span>&bull;</span>Social Media and Web Development<span>&bull;</span> <em class="date">March 2008 - Present</em></p>
-
-                        <p>
-                            Manage social media marketing campaigns and day-to-day activities including: Develop relevant content topics to reach the club's target audience. Create, curate, and manage all published content (images, video and written). Monitor, listen and respond
-                            to users in a “Social” way while cultivating leads. Also building and maintaining the clubs web-site/merchandise store.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- item end -->
-
-                <div class="row item">
-
-                    <div class="twelve columns">
-
-                        <h3>Department of Veterans Affairs</h3>
-                        <p class="info">Dept of Veterans Affairs<span>&bull;</span><em class="date">March 2007 - February 2010</em></p>
-                        <p>
-
-                            Take in-bound calls from Veterans, representatives of vets, pharmacies, hospitals, clinics and family members concerning prescriptions, billing and benefit information. Directly handles sensitive information on a daily basis while assisting veterans.
-                            Transcriptions from voice mail-typing and fulfilling veterans requests left on office answering machine. Answers multi-line phones, while multi-tasking and using VA systems and Microsoft office products.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- item end -->
-
-            </div>
-            <!-- main-col end -->
-
-        </div>
-        <!-- End Work -->
-
-
-        <!-- Skills
-      ----------------------------------------------- -->
-        <div class="row skill">
-
-            <div class="three columns header-col">
-                <h1><span>Skills</span></h1>
-            </div>
-
-            <div class="nine columns main-col">
-
-                <p class="info">Skills<span>&bull;</span></p><br>
-                <p>
-
-                    I currently am proficient in HTML, CSS, Javascript, Jquery, Node, React, Mysql, Gimp, Git, Gitbash, and Photoshop. I use microsoft products and government management programs on a daily basis. I am also responsible for upkeep on all Eddies APV club social
-                    media accounts including Facebook, Twitter, Instagram, website and merchandise. I am familiar with photography and art software/applications.
-                </p>
-
-
-            </div>
-            <!-- main-col end -->
-
-        </div>
-        <!-- End skills -->
+<ul class="cards">
+    <li class="cards__axis">
+      <figure class="cards__front">
+  <img src="https://vgy.me/9xOoZZ.jpg" alt="9xOoZZ.jpg">
+        <figcaption class="cards__description--front">
+          <p>Resume</p>
+        </figcaption>
+      </figure>
+      <figure class="cards__back">
+  <img src="https://vgy.me/9xOoZZ.jpg" alt="9xOoZZ.jpg">
+        <figcaption class="cards__description--back">
+         
+        </figcaption>
+      </figure>
+    </li>
+    
+  </ul>
+  
+  <!-- NOTE: The following code is a fallback for IE9, but if you are supporting IE8 also, you'll need to load selectivizr (https://github.com/keithclark/selectivizr) and HTML5shiv (https://github.com/aFarkas/html5shiv) -->
+  
+  <!--[if lt IE 10]>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    $('.cards__back').hide();
+    $('.cards__axis').mouseenter(function() {
+      $(this).find('.cards__back').fadeToggle();
+    }).mouseleave(function() {
+      $(this).find('.cards__back').fadeToggle();
+    });
+  })();
+  </script>
+  <![endif]-->
 
     </section>
     <!-- Resume Section End-->
