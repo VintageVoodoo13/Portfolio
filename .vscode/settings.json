@@ -1,0 +1,6 @@
+{
+    "search.runInExtensionHost": true,
+
+    "mix.rootPath": "build/html5",
+    "mix.port": 8181
+}
